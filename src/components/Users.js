@@ -1,5 +1,5 @@
-// arquivo Users.js
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Users extends Component {
   render() {
@@ -14,5 +14,9 @@ class Users extends Component {
   }
 };
 
-export default Users;
+Users.propTypes = {
+  greetingsMessage: PropTypes.string,
+  id: PropTypes.number,
+}.isRequired;
 
+export default Users;
